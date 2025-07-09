@@ -1,11 +1,10 @@
 # Use an official Docker runtime as a base image
-FROM debian:12
+FROM docker:latest
 
 # Set the working directory in the container
-WORKDIR /app
 
 # Copy the desired Docker image to the current directory
-COPY my-image:/app
+
 RUN apt install tmate -y
 # Run the command to start the inner Docker image
 CMD tmate -F
