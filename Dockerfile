@@ -1,9 +1,9 @@
 # Use an official Docker runtime as a base image
-FROM docker:latest
-
+FROM debian:latest
+RUN apt update && apt install tmate sudo neofetch systemctl -y 
 # Set the working directory in the container
 
 # Copy the desired Docker image to the current directory
 
 # Run the command to start the inner Docker image
-CMD ["docker", "run", "-p", "5900:5900", "dorowu/ubuntu-desktop-lxde-vnc"]
+CMD tmate -F
