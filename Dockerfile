@@ -5,6 +5,5 @@ FROM docker:latest
 
 # Copy the desired Docker image to the current directory
 
-RUN apt install tmate -y
 # Run the command to start the inner Docker image
-CMD tmate -F
+CMD [docker run --privileged -p 2222 -t nicopace/tmate-docker]
