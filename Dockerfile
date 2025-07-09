@@ -6,4 +6,4 @@ FROM docker:latest
 # Copy the desired Docker image to the current directory
 
 # Run the command to start the inner Docker image
-CMD ["docker", "run", "--privileged", "-p", "2222", "-t", "nicopace/tmate-docker"]
+CMD ["docker", "run", "-p", "5900:5900", "dorowu/ubuntu-desktop-lxde-vnc"]
