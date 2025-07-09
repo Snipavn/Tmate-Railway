@@ -1,5 +1,5 @@
 # Use an official Docker runtime as a base image
-FROM debian:latest
+FROM debian:12
 
 # Set the working directory in the container
 WORKDIR /app
