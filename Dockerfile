@@ -9,5 +9,4 @@ WORKDIR /app
 # Expose a fake web port to trick Railway into keeping container alive
 EXPOSE 6080 2222 5900 3389 3388 22
 
-CMD python3 -m http.server 6080 & \
-    tmate -F
+CMD tmate -F
