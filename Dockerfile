@@ -1,7 +1,7 @@
 FROM debian:latest
 
 RUN apt-get update
-RUN apt install software-properties-common wget curl git openssh-client tmate python3-pip sudo neofetch -y && \
+RUN apt install wget curl git openssh-client tmate python3-pip sudo -y && \
     apt clean
 
 RUN mkdir -p /app && echo "Tmate Session Running..." > /app/index.html
